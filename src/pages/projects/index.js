@@ -1,5 +1,12 @@
 import React from "react"
+import Layout from "../../components/Layout"
 
 export default function Projects() {
-  return <div>Projects</div>
+  return (
+    <Layout>
+      <div>
+        <h1>Projects page</h1>
+      </div>
+    </Layout>
+  )
 }
