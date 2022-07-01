@@ -1,11 +1,10 @@
-import { graphql, Link } from "gatsby"
+import { Link } from "gatsby"
 import React from "react"
 import Layout from "../components/Layout"
 import * as styles from "../styles/home.module.css"
 
 export default function Home({ data }) {
-  console.log("data ", data)
-  const { title, description } = data.site.siteMetadata
+  // const { title, description } = data.site.siteMetadata
 
   return (
     <Layout>
@@ -25,22 +24,22 @@ export default function Home({ data }) {
             maxWidth: "100%",
           }}
         />
-        <p>
+        {/* <p>
           {title} - {description}
-        </p>
+        </p> */}
       </section>
     </Layout>
   )
 }
 
-export const query = graphql`
-  query SiteInfo {
-    site {
-      siteMetadata {
-        title
-        description
-        copyright
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   query SiteInfo {
+//     site {
+//       siteMetadata {
+//         title
+//         description
+//         copyright
+//       }
+//     }
+//   }
+// `
