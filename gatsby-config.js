@@ -7,13 +7,14 @@
 module.exports = {
   /* Your site config here */
   plugins: [
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `notes`,
-        path: `${__dirname}/src/notes/`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `notes`,
+    //     path: `${__dirname}/src/notes/`,
+    //   },
+    // },
+    "gatsby-transformer-remark",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -26,5 +27,6 @@ module.exports = {
     title: "Web Warrior",
     description: "web dev portfolio",
     copyright: "This website is copyright 2022 Web Warrior",
+    contact: "me@test.com",
   },
 }
